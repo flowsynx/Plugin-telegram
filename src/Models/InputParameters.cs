@@ -2,6 +2,7 @@
 
 internal class InputParameters
 {
+    public string Operation {  get; set; } = "sendmessage";
     public string ChatId { get; set; } = string.Empty;
-    public string? Message { get; set; }
+    public object? Data { get; set; }
 }
