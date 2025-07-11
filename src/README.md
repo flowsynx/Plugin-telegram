@@ -1,4 +1,4 @@
-# FlowSynx Telegram Plugin
+## FlowSynx Telegram Plugin
 
 The Telegram Plugin is a pre-packaged, plug-and-play integration component for the FlowSynx engine. It enables sending Telegram messages through customizable parameters such as chat ID and message text, and is designed for FlowSynx no-code/low-code automation workflows.
 
@@ -104,4 +104,4 @@ When executing the plugin, provide the following parameters in the input diction
 
 ## License
 
-Copyright FlowSynx. All rights reserved.
+© FlowSynx. All rights reserved.
