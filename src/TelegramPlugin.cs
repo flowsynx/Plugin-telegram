@@ -17,28 +17,23 @@ public class TelegramPlugin : IPlugin
     public HttpClient HttpClient { get; set; } = new HttpClient();
     public IReflectionGuard ReflectionGuard { get; set; } = new DefaultReflectionGuard();
 
-    public PluginMetadata Metadata
+    public PluginMetadata Metadata => new PluginMetadata
     {
-        get
-        {
-            return new PluginMetadata
-            {
-                Id = Guid.Parse("4e9e2b55-935b-4c1c-9d0d-360aeaebf68a"),
-                Name = "Telegram",
-                CompanyName = "FlowSynx",
-                Description = Resources.PluginDescription,
-                Version = new PluginVersion(1, 1, 0),
-                Category = PluginCategory.Communication,
-                Authors = new List<string> { "FlowSynx" },
-                Copyright = "© FlowSynx. All rights reserved.",
-                Icon = "flowsynx.png",
-                ReadMe = "README.md",
-                RepositoryUrl = "https://github.com/flowsynx/Plugin-telegram",
-                ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "flowSynx", "telegram", "communication", "collaboration" },
-            };
-        }
-    }
+        Id = Guid.Parse("4e9e2b55-935b-4c1c-9d0d-360aeaebf68a"),
+        Name = "Telegram",
+        CompanyName = "FlowSynx",
+        Description = Resources.PluginDescription,
+        Version = new Version(1, 1, 1),
+        Category = PluginCategory.Communication,
+        Authors = new List<string> { "FlowSynx" },
+        Copyright = "© FlowSynx. All rights reserved.",
+        Icon = "flowsynx.png",
+        ReadMe = "README.md",
+        RepositoryUrl = "https://github.com/flowsynx/Plugin-telegram",
+        ProjectUrl = "https://flowsynx.io",
+        Tags = new List<string>() { "flowSynx", "telegram", "communication", "collaboration" },
+        MinimumFlowSynxVersion = new Version(1, 1, 1)
+    };
 
     public PluginSpecifications? Specifications { get; set; }
 
